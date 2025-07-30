@@ -1,13 +1,5 @@
 #!/bin/bash
 
-#The below bash script ;
-#• Finds files changed in the last 24 hours
-#• Compresses them into a backup file
-#• Moves it to another folder
-#• And runs automatically every day using Crontab
-
-
-
 # This checks if the number of arguments is correct
 # If the number of arguments is incorrect ( $# != 2 ) print error message and exit
 if [[ $# != 2 ]]
@@ -16,12 +8,16 @@ then
     exit
 fi
 
+
+
 # This checks if argument 1 and argument 2 are valid directory paths
 if [[ ! -d $1 ]] || [[ ! -d $2 ]]
 then
     echo "Invalid directory path provided"
     exit
 fi
+
+
 
 # [TASK 1]
 targetDirectory=$1
@@ -71,4 +67,5 @@ done
 tar -czvf $backupFileName ${toBackup[@]}
 
 # [TASK 13]
-mv "$backupFileName" "$destAbsPath"
+mv "$backupFileName" "$destDirAbsPath"
+
