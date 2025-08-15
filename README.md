@@ -22,3 +22,5 @@ These scripts are written primarily for **Linux**, but most can also run on **ma
    ```bash
    git clone https://github.com/ehti-90/Bash-scripts.git
    cd Bash-scripts
+2. Change file permission : chmod +x script-name.sh
+3. Run script according to its readme file.
