@@ -1,27 +1,33 @@
-# linuxbashscript
+# Bashscripts
 Author - Ehtisham Hassan
-
-
-# Daily File Backup Script (backup.sh)
-
-This Bash script automates the process of backing up files that were modified in the last 24 hours from a specified **source directory** to a **destination directory**.
-
-## What It Does
-
-- Scans a target directory for files modified in the past 24 hours
-- Compresses them into a timestamped `.tar.gz` archive
-- Moves the archive to the destination directory
-- Can be scheduled to run daily using `crontab`
 
 ---
 
-##  Usage
+# Purpose
+A collection of Bash scripts designed to automate common tasks and improve productivity.  
+These scripts are written primarily for **Linux**, but most can also run on **macOS** and **Windows** (If you install a Bash-compatible environment).
+---
 
-```bash
-./backup.sh <source_directory> <destination_directory>
---- 
+##  Features
+- Automate repetitive daily tasks
+- Easy to modify and customize
+- Organized by categories for quick navigation
+- Open-source and free to use
+ ---
 
-# Example 
-./backup.sh /home/user/documents /home/user/backups
+##  How to Use
+1. Clone the repository:
+  ```bash
+   git clone https://github.com/ehti-90/Bash-scripts.git
+   cd <Bash-scipts>
+
+2. Make a script executable by: chmod +x script-name.sh
+3. Finally run the script according to its discription given. 
+
+
+  
+
+
+
 
 
